@@ -1,0 +1,29 @@
+{
+  "name": "video-scripts",
+  "version": "1.0.0",
+  "description": "# cut a part of video  ffmpeg -ss 02:02:40 -t 00:00:20  -i input.mp4 -c copy  output.mp4",
+  "main": "cut-line-max-length.js",
+  "scripts": {
+    "debug": "nodemon --exec babel-node source/main.js",
+    "consult": "nodemon --exec babel-node source/consult.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malamanlucas/video-scripts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malamanlucas/video-scripts/issues"
+  },
+  "homepage": "https://github.com/malamanlucas/video-scripts#readme",
+  "dependencies": {
+    "line-reader": "^0.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
+  }
+}
